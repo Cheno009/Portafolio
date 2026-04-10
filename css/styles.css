@@ -1,6 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -151,4 +154,251 @@ main #section-about .text .title{
 main #section-about .text .bold{
     color: #3895ea;
     text-decoration: underline;
+}
+
+/*-- Trabajos --*/
+
+main #section-jobs {
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+main #section-jobs .container{
+    overflow: hidden;
+}
+
+main #section-jobs .title{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color: #3895ea;
+    text-align: center;
+}
+
+main #section-jobs .container-jobs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main #section-jobs .container-jobs .job {
+    width: 28%;
+    padding: 0px 0px 15px 0px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.25s;
+}
+
+main #section-jobs .job .thumb {
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+}
+
+main #section-jobs .job img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+main #section-jobs .container-jobs .job:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+main #section-jobs .container-jobs .job .description {
+    text-align: center;
+}
+
+main #section-jobs .container-jobs .job .description .name{
+    font-weight: 700;
+    color: #3895ea;
+    margin-bottom: 10px;
+}
+
+main #section-jobs .container-jobs .job .description .category {
+    font-size: 14px;
+    color: #636363;
+}
+
+/*--Habilidades--*/
+
+#section-skills{
+    padding: 60px 0;
+}
+
+#section-skills .title{
+    text-align: center;
+    color: #dd820d;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+
+.container-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.skill{
+    width: 25%;              
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.icon-skill{
+    font-size: 36px;
+    width: 35px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.description .name{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3895ea;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.description .category{
+    margin: 0;
+    font-size: 11px;
+    color: #5a5a5a;
+}
+
+/*-- Footer --*/
+footer {
+    background: #f2f2f2;
+    color: #fff;
+    padding: 0px 0px;
+}
+
+#section-contact {
+    padding: 60px 0px;
+}
+
+#section-contact .title{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    color: #3895ea;
+    text-align: center;
+}
+
+#section-contact .form-message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#section-contact .form-message input[type="text"],
+#section-contact .form-message input[type="email"],
+#section-contact .form-message textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+#section-contact .form-message input[type="text"],
+#section-contact .form-message input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+#section-contact .form-message textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    margin-bottom: 15px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+#section-contact .form-message .btn-send-msg {
+    margin: auto;
+    background: #3895ea;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+}
+
+#section-contact .form-message .btn-send-msg:hover{
+    background: #387bea;
+}
+
+/*-- Redes Sociales --*/
+#section-socialMedia {
+    background-image: linear-gradient(#1e2838 50%, #3c5171 90%);
+    padding: 60px 0;
+}
+
+#section-socialMedia .container {
+    display: flex;
+    justify-content: center;
+}
+
+#section-socialMedia .container a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    font-size: 30px;
+    padding: 15px 0;
+    display: block;
+    margin: 0 20px;
+    border-radius: 3px;
+}
+
+#section-socialMedia .container .youtube:hover {
+    background: #cd201f;
+}
+
+#section-socialMedia .container .github:hover {
+    background: #666666;
+}
+#section-socialMedia .container .facebook:hover {
+    background: #3b5998;
+}
+
+#social-left{
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#social-left a{
+    display:block;
+    width:60px;
+    padding:15px 0;
+    text-align:center;
+    color:#fff;
+}
+
+#social-left .facebook,
+#social-bottom .facebook{
+    background:#3b5998;
+}
+
+#social-left .youtube,
+#social-bottom .youtube{
+    background:#cd201f;
+}
+
+#social-left .github,
+#social-bottom .github{
+    background:#666666;
 }
